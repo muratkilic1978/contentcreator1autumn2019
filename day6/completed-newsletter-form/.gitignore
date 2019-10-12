@@ -1,0 +1,10 @@
+# WordPress config file
+wp-config.php
+
+# OSX files
+.DS_Store
+Thumbs.db
+.cache
+
+# WordPress files
+wp-content/themes/twentynineteen/package-lock.json

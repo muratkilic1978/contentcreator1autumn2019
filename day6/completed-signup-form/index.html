@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shake forms with HTML5</title>
+</head>
+<body>
+    
+<div class="login-form">
+    <div class="login-face"><img src="img/face-login.png" alt="login-face"></div>
+    <section class="form">
+        <form action="#" id="myForm">
+            <div class="input">
+                <input type="text" name="username" id="username" placeholder="eg. John Kerry" required>
+                <i class="fa fa-user fa-2x"></i>
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="email" placeholder="eg. kerry@hotmail.com">
+                <i class="fa fa-envelope fa-2x"></i>
+            </div>
+            
+            <div>
+                <input type="reset" value="Reset form" onclick="resetForm()"  id="rstBtn">
+            </div>
+            <div>
+                <input type="submit" value="Sign-up for Newsletter" name="submitBtn" id="submitBtn">
+            </div>
+            
+        </form>
+    </section>
+    
+</div>  
+    
+    
+    
+</body>
+</html>
