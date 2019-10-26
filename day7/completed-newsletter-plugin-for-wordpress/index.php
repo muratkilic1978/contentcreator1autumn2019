@@ -47,7 +47,7 @@ function newsletter_form()
     #First parameter is a self choosen name for a unique short-code. Second parameter is the name of the function that creates the newsletter
     add_shortcode('show_newsletter','newsletter_form');
 
-    # Come back later
+    #Actions are the hooks that the WordPress core launches at specific points during execution, or when specific events occur
     add_action('wp_enqueue_scripts','register_styles_and_scripts_for_plugin');
 
     function register_styles_and_scripts_for_plugin() 
