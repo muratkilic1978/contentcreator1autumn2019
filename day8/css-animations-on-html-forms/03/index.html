@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations within forms</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="subscribeForm">
+          <section class="subscribe">
+              <h3 id="subscribeHeadline">Get <span id="savepercentages">25%</span> Off Your First Workshop</h3>
+              <p id="promotext">when you sign up for emails.</p>
+          </section>         
+          <section>
+              <input type="text" name="email" id="emailField" class="textbox" placeholder="Email Address">      
+          </section>
+        
+          <section class="interest">
+              <label class="checkbox-inline"><input type="checkbox" value="">Coding</label>
+              <label class="checkbox-inline"><input type="checkbox" value="">Data</label>
+              <label class="checkbox-inline"><input type="checkbox" value="">Business</label>
+              <br>
+              <label class="checkbox-inline"><input type="checkbox" value="">Marketing</label>
+              <label class="checkbox-inline"><input type="checkbox" value="">Design</label>
+              <label class="checkbox-inline"><input type="checkbox" value="">UX</label>   
+          </section>
+        
+          
+          <input type="submit" value="Subscribe + Save" class="btn" id="subscribeBtn">
+        </div>
+      </div>
+  </div>
+    
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("#newsletterBtn").on('click', function(){
+           $("#emailField").addClass('animated shake');
+            $("#emailField").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', function(){
+                $("#emailField").removeClass('animated shake');
+            });
+        });
+    </script>
+ 
+</body>
+</html>

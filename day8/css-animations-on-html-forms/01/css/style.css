@@ -1,0 +1,80 @@
+/*// POP-UP BASE STYLES //*/
+
+body{margin: 0; position: relative;}
+body.pop-up{background: ghostwhite;}
+*{
+  font-family: Calibri, sans-serif; 
+  font-weight: normal;
+  color: #555555;
+}
+h1{
+  font-size: 48px;
+  margin: 10px 0;
+}
+p{
+  margin-bottom: 40px;
+}
+#pop-up{
+  position: relative; 
+  top: 200px; 
+  width: 500px; 
+  margin: 0 auto; 
+  text-align: center;
+}
+#pop-up .container{
+  background: #f0e4d4; 
+  padding: 30px; 
+  position: absolute; 
+  top: 50px; 
+  width: 100%; 
+  box-sizing: border-box;
+}
+#pop-up input{
+  padding: 10px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+button{
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  background: #1b618c;
+  margin-left: -5px;
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+form.container{
+    box-shadow: 10px 10px 5px grey;
+}
+
+/*// POP-UP ANIMATION STYLES //*/
+
+#pop-up{
+    top: -400px; /* */
+    transform-origin: 10px 10px;
+    animation: drop 0.5s ease forwards,
+               swing 1.2s 0.7s ease-in-out forwards;
+}
+
+@keyframes drop{
+    0%{ opacity: 0}
+    50%{transform: translateY(710px)}
+    100%{transform: translateY(650px); opacity: 1;}
+}
+
+@keyframes swing{
+    /*0%{ transform: translateY(650px) rotateX()}
+    40%{ transform: translateY(650px) rotateZ(90deg)}
+    70%{ transform: translateY(650px) rotateZ(75deg)}
+    100%{ transform: translateY(650px) rotateZ(75deg)}*/
+
+    100%{-webkit-transform: translateY(650px) rotateX(180deg) rotateY(180deg) rotateZ(180deg) translateY(1px);
+-moz-transform: translateY(650px) rotateX(180deg) rotateY(180deg) rotateZ(180deg) translateY(1px);
+-ms-transform: translateY(650px) rotateX(180deg) rotateY(180deg) rotateZ(180deg) translateY(1px);
+-o-transform: translateY(650px) rotateX(180deg) rotateY(180deg) rotateZ(180deg) translateY(1px);
+transform: translateY(650px) rotateX(180deg) rotateY(180deg) rotateZ(180deg) translateY(1px);}

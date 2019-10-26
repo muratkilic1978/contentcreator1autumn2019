@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Politikken Nyhedsbrev</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+   <div class="bmnetInnerNewsletter">
+        <div class="newsletterWrapper">
+            <div class="newsletterImgArea"><img src="img/nyhedsbrev_desktop_morgen.png"></div>
+            <div class="newsletterArea">
+                <div class="newsletterHeader">
+                    <h2 data-edit="string" data-title="Title" class="special-header ui-font ui-font--bold">NYHEDSBREV FRA POLITIKEN MORGEN</h2>
+                </div> <!--- newsletterHeader --->
+
+                <div class="newsletterInfo">
+                    <p>Hver morgen håndplukker og præsentere vi dig for dagens væsentligste historier til dig.</p>
+                </div> <!--- newsletterInfo --->
+
+                <div class="newsletterForm">
+                    <div class="formError" data-role="error"></div>
+                    <form>
+                        <div class="newsletterInputFieldWrapper">
+                            <input type="text" id="bmnetInput1" class="newsletterInputField" placeholder="Indtast din mail her" name="email">
+
+                        </div> <!--- newsletterInputFieldWrapper --->
+                        <div class="newsletterButtonWrapper">
+                            <input type="button" id="bmnetCallbackButton" class="newsletterButton" value="Tilmeld" >
+                            <input type="hidden" id="newsletterid" name="newsletterid" value="politiken-morgen">
+                            <input type="hidden" id="permission" name="permission" value="false">
+                            <input type="hidden" id="Nyhedsbrev" name="Nyhedsbrev" value="true">
+                            <!-- Hidden type is used for Conversion Handler, which needs to match on name="Newsletter" -->
+                        </div> <!--- newsletterButtonWrapper --->
+                    </form>
+                </div> <!--- newsletterForm --->
+
+            </div> <!--- newsletterArea --->
+        </div> <!--- newsletterWrapper --->
+</div>
+    
+</body>
+</html>

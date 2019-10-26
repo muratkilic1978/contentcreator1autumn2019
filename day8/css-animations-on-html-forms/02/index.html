@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations within forms</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="newsletterForm">
+          <h4 id="promoHeadline">Hello there! Enjoy<h4>
+              <p id="promotext-savepercentages"><sup id="dollarsign">$</sup>15 off <sup id="dollarsign">$</sup>75</p>
+              <p id="promotext">when you sign up for emails.</p>
+          
+          <input type="text" name="email" id="emailField" class="textbox" placeholder="Email Address">
+        
+        
+          <input type="submit" value="Join us" class="btn" id="newsletterBtn">
+        </div>
+      </div>
+  </div>
+    
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("#newsletterBtn").on('click', function(){
+           $("#emailField").addClass('animated shake');
+            $("#emailField").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd animationend', function(){
+                $("#emailField").removeClass('animated shake');
+            });
+        });
+    </script>
+ 
+</body>
+</html>

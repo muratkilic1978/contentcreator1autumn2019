@@ -1,0 +1,55 @@
+body {
+    background-color: #ececec;
+    font-family: 'Roboto';
+    
+}
+
+.subscribeForm {
+    width: 400px;
+    margin: 355px auto 0 auto;
+    background-color: white;
+    padding: 10px 20px 20px 20px;
+    line-height: 160%;
+    font-size: 14px;
+    text-align: center;
+}
+.textbox {
+    width: 355px;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px;
+    margin-bottom: 6px;
+}
+
+.btn {
+    background-color: orangered;
+    border: 0;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 1px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.18em;
+    
+}
+.btn:active {
+    opacity: 0.8;
+}
+p {
+    font-family: 'Roboto';
+    font-size: 1.9em;
+    font-weight: bold;
+    
+}
+p#promotext {
+    font-family: 'Roboto';
+    font-size: 1.17em;
+    font-weight: bold;
+}
+section.interest{
+
+    margin: 16px;
+    text-align: left;
+}
